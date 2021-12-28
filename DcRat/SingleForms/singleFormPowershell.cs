@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DcRat.SingleForms
 {
-    public partial class singleFormFile : Form
+    public partial class singleFormPowershell : Form
     {
-        public singleFormFile()
+        public singleFormPowershell()
         {
             InitializeComponent();
         }

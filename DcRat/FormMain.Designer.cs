@@ -32,6 +32,8 @@ namespace DcRat
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.paneltop = new System.Windows.Forms.Panel();
             this.labelDcRat = new System.Windows.Forms.Label();
+            this.buttonmin = new System.Windows.Forms.Button();
+            this.buttonmax = new System.Windows.Forms.Button();
             this.buttonclose = new System.Windows.Forms.Button();
             this.panelleft = new System.Windows.Forms.Panel();
             this.panelside = new System.Windows.Forms.Panel();
@@ -42,8 +44,6 @@ namespace DcRat
             this.buttonthumbnails = new System.Windows.Forms.Button();
             this.buttonhome = new System.Windows.Forms.Button();
             this.panelchild = new System.Windows.Forms.Panel();
-            this.buttonmax = new System.Windows.Forms.Button();
-            this.buttonmin = new System.Windows.Forms.Button();
             this.paneltop.SuspendLayout();
             this.panelleft.SuspendLayout();
             this.SuspendLayout();
@@ -59,20 +59,61 @@ namespace DcRat
             this.paneltop.Location = new System.Drawing.Point(0, 0);
             this.paneltop.Margin = new System.Windows.Forms.Padding(0);
             this.paneltop.Name = "paneltop";
-            this.paneltop.Size = new System.Drawing.Size(1200, 43);
+            this.paneltop.Size = new System.Drawing.Size(1200, 45);
             this.paneltop.TabIndex = 0;
             this.paneltop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneltop_MouseDown);
             // 
             // labelDcRat
             // 
-            this.labelDcRat.AutoSize = true;
             this.labelDcRat.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDcRat.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelDcRat.Location = new System.Drawing.Point(45, 1);
+            this.labelDcRat.Location = new System.Drawing.Point(50, 0);
+            this.labelDcRat.Margin = new System.Windows.Forms.Padding(50, 0, 3, 0);
             this.labelDcRat.Name = "labelDcRat";
-            this.labelDcRat.Size = new System.Drawing.Size(269, 42);
+            this.labelDcRat.Size = new System.Drawing.Size(285, 45);
             this.labelDcRat.TabIndex = 1;
             this.labelDcRat.Text = "DcRat - Dev Version";
+            this.labelDcRat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelDcRat_MouseDown);
+            // 
+            // buttonmin
+            // 
+            this.buttonmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonmin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonmin.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.buttonmin.FlatAppearance.BorderSize = 2;
+            this.buttonmin.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonmin.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonmin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonmin.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonmin.Image = ((System.Drawing.Image)(resources.GetObject("buttonmin.Image")));
+            this.buttonmin.Location = new System.Drawing.Point(1074, 3);
+            this.buttonmin.Name = "buttonmin";
+            this.buttonmin.Size = new System.Drawing.Size(37, 39);
+            this.buttonmin.TabIndex = 0;
+            this.buttonmin.UseVisualStyleBackColor = false;
+            this.buttonmin.Click += new System.EventHandler(this.buttonmin_Click);
+            // 
+            // buttonmax
+            // 
+            this.buttonmax.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonmax.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonmax.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.buttonmax.FlatAppearance.BorderSize = 2;
+            this.buttonmax.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonmax.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonmax.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonmax.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonmax.Image = ((System.Drawing.Image)(resources.GetObject("buttonmax.Image")));
+            this.buttonmax.Location = new System.Drawing.Point(1117, 3);
+            this.buttonmax.Name = "buttonmax";
+            this.buttonmax.Size = new System.Drawing.Size(37, 39);
+            this.buttonmax.TabIndex = 0;
+            this.buttonmax.UseVisualStyleBackColor = false;
+            this.buttonmax.Click += new System.EventHandler(this.buttonmax_Click);
             // 
             // buttonclose
             // 
@@ -89,7 +130,7 @@ namespace DcRat
             this.buttonclose.Image = ((System.Drawing.Image)(resources.GetObject("buttonclose.Image")));
             this.buttonclose.Location = new System.Drawing.Point(1160, 3);
             this.buttonclose.Name = "buttonclose";
-            this.buttonclose.Size = new System.Drawing.Size(37, 37);
+            this.buttonclose.Size = new System.Drawing.Size(37, 39);
             this.buttonclose.TabIndex = 0;
             this.buttonclose.UseVisualStyleBackColor = false;
             this.buttonclose.Click += new System.EventHandler(this.buttonclose_Click);
@@ -105,9 +146,9 @@ namespace DcRat
             this.panelleft.Controls.Add(this.buttonthumbnails);
             this.panelleft.Controls.Add(this.buttonhome);
             this.panelleft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelleft.Location = new System.Drawing.Point(0, 43);
+            this.panelleft.Location = new System.Drawing.Point(0, 45);
             this.panelleft.Name = "panelleft";
-            this.panelleft.Size = new System.Drawing.Size(166, 557);
+            this.panelleft.Size = new System.Drawing.Size(166, 555);
             this.panelleft.TabIndex = 1;
             // 
             // panelside
@@ -130,7 +171,7 @@ namespace DcRat
             this.buttonsettings.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonsettings.Image = ((System.Drawing.Image)(resources.GetObject("buttonsettings.Image")));
             this.buttonsettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonsettings.Location = new System.Drawing.Point(3, 414);
+            this.buttonsettings.Location = new System.Drawing.Point(3, 412);
             this.buttonsettings.Name = "buttonsettings";
             this.buttonsettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonsettings.Size = new System.Drawing.Size(160, 67);
@@ -151,7 +192,7 @@ namespace DcRat
             this.buttonabout.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonabout.Image = ((System.Drawing.Image)(resources.GetObject("buttonabout.Image")));
             this.buttonabout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonabout.Location = new System.Drawing.Point(3, 487);
+            this.buttonabout.Location = new System.Drawing.Point(3, 485);
             this.buttonabout.Name = "buttonabout";
             this.buttonabout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonabout.Size = new System.Drawing.Size(160, 67);
@@ -246,51 +287,11 @@ namespace DcRat
             // panelchild
             // 
             this.panelchild.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelchild.Location = new System.Drawing.Point(166, 43);
+            this.panelchild.Location = new System.Drawing.Point(166, 45);
             this.panelchild.Name = "panelchild";
             this.panelchild.Padding = new System.Windows.Forms.Padding(3);
-            this.panelchild.Size = new System.Drawing.Size(1034, 557);
+            this.panelchild.Size = new System.Drawing.Size(1034, 555);
             this.panelchild.TabIndex = 2;
-            // 
-            // buttonmax
-            // 
-            this.buttonmax.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonmax.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonmax.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.buttonmax.FlatAppearance.BorderSize = 2;
-            this.buttonmax.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonmax.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonmax.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonmax.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonmax.Image = ((System.Drawing.Image)(resources.GetObject("buttonmax.Image")));
-            this.buttonmax.Location = new System.Drawing.Point(1117, 3);
-            this.buttonmax.Name = "buttonmax";
-            this.buttonmax.Size = new System.Drawing.Size(37, 37);
-            this.buttonmax.TabIndex = 0;
-            this.buttonmax.UseVisualStyleBackColor = false;
-            this.buttonmax.Click += new System.EventHandler(this.buttonmax_Click);
-            // 
-            // buttonmin
-            // 
-            this.buttonmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonmin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonmin.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.buttonmin.FlatAppearance.BorderSize = 2;
-            this.buttonmin.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonmin.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonmin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonmin.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonmin.Image = ((System.Drawing.Image)(resources.GetObject("buttonmin.Image")));
-            this.buttonmin.Location = new System.Drawing.Point(1074, 3);
-            this.buttonmin.Name = "buttonmin";
-            this.buttonmin.Size = new System.Drawing.Size(37, 37);
-            this.buttonmin.TabIndex = 0;
-            this.buttonmin.UseVisualStyleBackColor = false;
-            this.buttonmin.Click += new System.EventHandler(this.buttonmin_Click);
             // 
             // FormMain
             // 
@@ -305,7 +306,6 @@ namespace DcRat
             this.Opacity = 0.97D;
             this.Text = "DcRat";
             this.paneltop.ResumeLayout(false);
-            this.paneltop.PerformLayout();
             this.panelleft.ResumeLayout(false);
             this.ResumeLayout(false);
 

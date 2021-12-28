@@ -90,11 +90,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleForms\singleFormCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleForms\singleFormCamera.Designer.cs">
+      <DependentUpon>singleFormCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleForms\singleFormCmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleForms\singleFormCmd.Designer.cs">
+      <DependentUpon>singleFormCmd.cs</DependentUpon>
+    </Compile>
     <Compile Include="SingleForms\singleFormFile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SingleForms\singleFormFile.Designer.cs">
       <DependentUpon>singleFormFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleForms\singleFormPowershell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleForms\singleFormPowershell.Designer.cs">
+      <DependentUpon>singleFormPowershell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleForms\singleFormProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleForms\singleFormProcess.Designer.cs">
+      <DependentUpon>singleFormProcess.cs</DependentUpon>
     </Compile>
     <Compile Include="SingleForms\singleFormScreen.cs">
       <SubType>Form</SubType>
@@ -132,8 +156,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SingleForms\singleFormCamera.resx">
+      <DependentUpon>singleFormCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleForms\singleFormCmd.resx">
+      <DependentUpon>singleFormCmd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SingleForms\singleFormFile.resx">
       <DependentUpon>singleFormFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleForms\singleFormPowershell.resx">
+      <DependentUpon>singleFormPowershell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleForms\singleFormProcess.resx">
+      <DependentUpon>singleFormProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SingleForms\singleFormScreen.resx">
       <DependentUpon>singleFormScreen.cs</DependentUpon>

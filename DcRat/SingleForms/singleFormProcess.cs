@@ -11,12 +11,13 @@ using System.Windows.Forms;
 
 namespace DcRat.SingleForms
 {
-    public partial class singleFormFile : Form
+    public partial class singleFormProcess : Form
     {
-        public singleFormFile()
+        public singleFormProcess()
         {
             InitializeComponent();
         }
+
 
         #region Move
         [DllImport("user32.dll")]
@@ -54,6 +55,5 @@ namespace DcRat.SingleForms
         {
             this.Close();
         }
-
     }
 }

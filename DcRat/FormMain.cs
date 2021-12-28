@@ -192,7 +192,11 @@ namespace DcRat
             ReleaseCapture();
             SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
-
+        private void labelDcRat_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
+        }
         #endregion
 
         private void buttonclose_Click(object sender, EventArgs e)
@@ -277,5 +281,7 @@ namespace DcRat
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        
     }
 }

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DcRat.SingleForms
 {
-    public partial class singleFormFile : Form
+    public partial class singleFormCamera : Form
     {
-        public singleFormFile()
+        public singleFormCamera()
         {
             InitializeComponent();
         }
@@ -54,6 +54,5 @@ namespace DcRat.SingleForms
         {
             this.Close();
         }
-
     }
 }

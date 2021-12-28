@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DcRat.SingleForms
 {
-    public partial class singleFormFile : Form
+    public partial class singleFormCmd : Form
     {
-        public singleFormFile()
+        public singleFormCmd()
         {
             InitializeComponent();
         }
