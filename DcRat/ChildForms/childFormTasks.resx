@@ -120,6 +120,38 @@
   <metadata name="contextMenuStripTasks.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>157, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="newToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAALpJREFUWEft
+        ldENgzAMRD0aIyQfrNA1GK1LZAXmaH3WiVaoHynBgUg+6T58CvZDkESglNKScy7qVycXzLThEILdgh4u
+        HG8ACJ4s3YVZmMkyAALgpgC6Tyfs1ZM8sa2pFgCHE/JmoxfbmjSr+wQgP8Nst6kawEsBMAaA1jPzZuuP
+        +GBbk2YDAHgqAMYB+D5OW8x2m6oA9MFrLyPS/7paj/j/69hTARAAtwSwoLM/L4y9qsG6W+DpFTNFRN5V
+        d6wn170hRwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="editToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAZxJREFUWEft
+        liFLBFEUhTdYDCJYLFaLCGaDOJhEZGd2hukmsZvUYLOJyaBF0SBMtYjFZtI/IAj7BwTL5vW7clhcdmf2
+        zdsXDPPBCe+8e989+3bY2VZDwzg6nU6OCvRSR0mSnOqIIdgryvZGoDCioe8jei91zAD8a+0XsqpJ0/RK
+        h7klroCzzjT8Oc/zWdnVUGzX2dfSGz7AoYa/E2RJ9mRCBGD4noZ30ZpsN6YNQO+u9aMe2pLtDk3eAehb
+        R1/Wj3LZ9aDRK0CWZcv0fWj4gez6+ATgCV+g51XDT2T74ROA+kfr4eG7kOVP3QDU3lo9upc1AM9+Ae+0
+        dIMm5wDUnVstQ56iKJqRPcD27Dwt3bAGa9SyFIYeacBbu91elD2E9sMHYPi+Du/GcbwiewTVhA3A8EwH
+        9xi+IXssqgsXAH8Tfds+SmWXorowAfBW0aft2VcguxKrRWECMPT3BcOb7VjWRIIG4EmfI0SkpRNBA/gw
+        VQC7clle2G15BfjTGEScV/+vHY3b6AHZbXiJh/WG34kd3pTzOrah4T/Sav0AeaRYjXOuF9kAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="deleteToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAMpJREFUWEft
+        l8ENwjAMRTMCbMQ9lyQXxA7s0EWQGKX7dInWH31zoEE0xUhQ/KSvpo7989Ve2uD8FCmlUynlmnPua8Ie
+        ethuixjv5JBBNL7QgF6O2SGmBx7QY10T9tCDNcfs4AG3ACzN2E4ANTLW0+Az0PwwbKHlARQd5m0z785X
+        DfB+VSxVa+BjAVCTa8cSah1rHsADeAAP4AH+IEALmwhw/8RaIwZo/xBRxORMk9WCB+3aiTHu5WfjKLqI
+        GZ7GYmEGs/CgnfONhDAB4YTk5Ju2uq8AAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="imageListblank.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

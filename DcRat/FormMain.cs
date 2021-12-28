@@ -137,12 +137,12 @@ namespace DcRat
         private void SMouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-            {                
+            {
                 if (lastHeight + (Control.MousePosition.Y - mousePoint.Y) <= 600)
                 {
                     this.Height = 600;
                 }
-                else 
+                else
                 {
                     this.Height = lastHeight + (Control.MousePosition.Y - mousePoint.Y);
                 }
@@ -159,7 +159,7 @@ namespace DcRat
         #endregion
 
         #region ChildForm
-        
+
 
         private void openChildForm(Form frm)
         {
@@ -274,7 +274,10 @@ namespace DcRat
             if (this.WindowState == FormWindowState.Maximized)
                 this.WindowState = FormWindowState.Normal;
             else
+            {
+                this.MaximumSize = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
                 this.WindowState = FormWindowState.Maximized;
+            }
         }
 
         private void buttonmin_Click(object sender, EventArgs e)
@@ -282,6 +285,6 @@ namespace DcRat
             this.WindowState = FormWindowState.Minimized;
         }
 
-        
+
     }
 }

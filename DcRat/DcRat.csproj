@@ -82,6 +82,12 @@
     <Compile Include="ChildForms\childFormThumbnails.Designer.cs">
       <DependentUpon>childFormThumbnails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ToggleButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ToggleButton.Designer.cs">
+      <DependentUpon>ToggleButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SingleForms\singleFormCamera.resx">
       <DependentUpon>singleFormCamera.cs</DependentUpon>
@@ -186,6 +193,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle_on .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle_off .png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

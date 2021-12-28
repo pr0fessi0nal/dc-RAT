@@ -30,16 +30,17 @@ namespace DcRat.ChildForms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(childFormTasks));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeadertaskname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderstatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeadertrigger = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderexecutiontimes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.imageListblank = new System.Windows.Forms.ImageList(this.components);
             this.contextMenuStripTasks = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageListblank = new System.Windows.Forms.ImageList(this.components);
             this.contextMenuStripTasks.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,12 +88,6 @@ namespace DcRat.ChildForms
             this.columnHeaderexecutiontimes.Text = "Execution Times";
             this.columnHeaderexecutiontimes.Width = 242;
             // 
-            // imageListblank
-            // 
-            this.imageListblank.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageListblank.ImageSize = new System.Drawing.Size(32, 32);
-            this.imageListblank.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // contextMenuStripTasks
             // 
             this.contextMenuStripTasks.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,25 +96,37 @@ namespace DcRat.ChildForms
             this.editToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.contextMenuStripTasks.Name = "contextMenuStripTasks";
-            this.contextMenuStripTasks.Size = new System.Drawing.Size(108, 70);
+            this.contextMenuStripTasks.Size = new System.Drawing.Size(197, 140);
             // 
             // newToolStripMenuItem
             // 
+            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
+            this.newToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.newToolStripMenuItem.Text = "New";
             // 
             // editToolStripMenuItem
             // 
+            this.editToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editToolStripMenuItem.Image")));
+            this.editToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // deleteToolStripMenuItem
             // 
+            this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
+            this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.deleteToolStripMenuItem.Text = "Delete";
+            // 
+            // imageListblank
+            // 
+            this.imageListblank.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageListblank.ImageSize = new System.Drawing.Size(32, 32);
+            this.imageListblank.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // childFormTasks
             // 

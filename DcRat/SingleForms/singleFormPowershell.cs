@@ -47,7 +47,10 @@ namespace DcRat.SingleForms
             if (this.WindowState == FormWindowState.Maximized)
                 this.WindowState = FormWindowState.Normal;
             else
+            {
+                this.MaximumSize = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
                 this.WindowState = FormWindowState.Maximized;
+            }
         }
 
         private void buttonclose_Click(object sender, EventArgs e)

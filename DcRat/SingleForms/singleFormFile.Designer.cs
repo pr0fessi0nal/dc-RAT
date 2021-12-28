@@ -85,7 +85,7 @@ namespace DcRat.SingleForms
             // 
             // paneltop
             // 
-            this.paneltop.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.paneltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.paneltop.Controls.Add(this.labelDcRat);
             this.paneltop.Controls.Add(this.buttonmin);
             this.paneltop.Controls.Add(this.buttonmax);
@@ -116,9 +116,9 @@ namespace DcRat.SingleForms
             // 
             this.buttonmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonmin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.buttonmin.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.buttonmin.FlatAppearance.BorderSize = 2;
+            this.buttonmin.FlatAppearance.BorderSize = 0;
             this.buttonmin.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmin.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -136,9 +136,9 @@ namespace DcRat.SingleForms
             // 
             this.buttonmax.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonmax.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonmax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.buttonmax.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.buttonmax.FlatAppearance.BorderSize = 2;
+            this.buttonmax.FlatAppearance.BorderSize = 0;
             this.buttonmax.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmax.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -156,9 +156,9 @@ namespace DcRat.SingleForms
             // 
             this.buttonclose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonclose.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.buttonclose.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.buttonclose.FlatAppearance.BorderSize = 2;
+            this.buttonclose.FlatAppearance.BorderSize = 0;
             this.buttonclose.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonclose.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
