@@ -42,6 +42,7 @@ namespace DcRat.ChildForms
             // 
             this.toolStrip1.AutoSize = false;
             this.toolStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonOn,
             this.toolStripLabelBlank,
@@ -58,13 +59,13 @@ namespace DcRat.ChildForms
             this.toolStripButtonOn.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButtonOn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonOn.Name = "toolStripButtonOn";
-            this.toolStripButtonOn.Size = new System.Drawing.Size(61, 40);
+            this.toolStripButtonOn.Size = new System.Drawing.Size(59, 40);
             this.toolStripButtonOn.Text = "On";
             // 
             // toolStripLabelBlank
             // 
             this.toolStripLabelBlank.Name = "toolStripLabelBlank";
-            this.toolStripLabelBlank.Size = new System.Drawing.Size(48, 40);
+            this.toolStripLabelBlank.Size = new System.Drawing.Size(37, 40);
             this.toolStripLabelBlank.Text = "          ";
             // 
             // toolStripButtonOff
@@ -73,7 +74,7 @@ namespace DcRat.ChildForms
             this.toolStripButtonOff.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButtonOff.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonOff.Name = "toolStripButtonOff";
-            this.toolStripButtonOff.Size = new System.Drawing.Size(62, 40);
+            this.toolStripButtonOff.Size = new System.Drawing.Size(60, 40);
             this.toolStripButtonOff.Text = "Off";
             // 
             // listView1

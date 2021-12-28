@@ -40,13 +40,13 @@ namespace DcRat.ChildForms
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.splitContainerHome = new System.Windows.Forms.SplitContainer();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeaderip = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.contextMenuStripMain = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.updateUI = new System.Windows.Forms.Timer(this.components);
             this.toolStripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerHome)).BeginInit();
@@ -59,6 +59,7 @@ namespace DcRat.ChildForms
             // 
             this.toolStripMain.AutoSize = false;
             this.toolStripMain.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripMain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
@@ -172,6 +173,27 @@ namespace DcRat.ChildForms
             this.toolStripButton8.Size = new System.Drawing.Size(43, 42);
             this.toolStripButton8.Text = "Device";
             // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.toolStripLabel2.Size = new System.Drawing.Size(96, 42);
+            this.toolStripLabel2.Text = "toolStripLabel2";
+            this.toolStripLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.toolStripLabel1.Size = new System.Drawing.Size(96, 42);
+            this.toolStripLabel1.Text = "toolStripLabel1";
+            this.toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // splitContainerHome
             // 
             this.splitContainerHome.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -195,6 +217,7 @@ namespace DcRat.ChildForms
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderip});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
@@ -213,36 +236,18 @@ namespace DcRat.ChildForms
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Desktop;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(981, 234);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "DcRat - Dev Version\nCopyright (c) qwqdanchun 2021-2022. \n\nDcRat >>";
             // 
             // contextMenuStripMain
             // 
             this.contextMenuStripMain.Name = "contextMenuStripMain";
             this.contextMenuStripMain.Size = new System.Drawing.Size(61, 4);
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.toolStripLabel1.Size = new System.Drawing.Size(106, 42);
-            this.toolStripLabel1.Text = "toolStripLabel1";
-            this.toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.toolStripLabel2.Size = new System.Drawing.Size(106, 42);
-            this.toolStripLabel2.Text = "toolStripLabel2";
-            this.toolStripLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // updateUI
             // 
