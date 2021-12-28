@@ -69,15 +69,15 @@ namespace DcRat.SingleForms
             this.zipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zipToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.unzipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.propertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.propertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paneltop.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -107,7 +107,7 @@ namespace DcRat.SingleForms
             this.labelDcRat.Location = new System.Drawing.Point(50, 0);
             this.labelDcRat.Margin = new System.Windows.Forms.Padding(50, 0, 3, 0);
             this.labelDcRat.Name = "labelDcRat";
-            this.labelDcRat.Size = new System.Drawing.Size(751, 45);
+            this.labelDcRat.Size = new System.Drawing.Size(745, 45);
             this.labelDcRat.TabIndex = 1;
             this.labelDcRat.Text = "DcRat - File - ";
             this.labelDcRat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelDcRat_MouseDown);
@@ -125,9 +125,9 @@ namespace DcRat.SingleForms
             this.buttonmin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmin.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmin.Image = ((System.Drawing.Image)(resources.GetObject("buttonmin.Image")));
-            this.buttonmin.Location = new System.Drawing.Point(807, 3);
+            this.buttonmin.Location = new System.Drawing.Point(801, 3);
             this.buttonmin.Name = "buttonmin";
-            this.buttonmin.Size = new System.Drawing.Size(37, 39);
+            this.buttonmin.Size = new System.Drawing.Size(39, 39);
             this.buttonmin.TabIndex = 0;
             this.buttonmin.UseVisualStyleBackColor = false;
             this.buttonmin.Click += new System.EventHandler(this.buttonmin_Click);
@@ -145,9 +145,9 @@ namespace DcRat.SingleForms
             this.buttonmax.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmax.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmax.Image = ((System.Drawing.Image)(resources.GetObject("buttonmax.Image")));
-            this.buttonmax.Location = new System.Drawing.Point(850, 3);
+            this.buttonmax.Location = new System.Drawing.Point(846, 3);
             this.buttonmax.Name = "buttonmax";
-            this.buttonmax.Size = new System.Drawing.Size(37, 39);
+            this.buttonmax.Size = new System.Drawing.Size(39, 39);
             this.buttonmax.TabIndex = 0;
             this.buttonmax.UseVisualStyleBackColor = false;
             this.buttonmax.Click += new System.EventHandler(this.buttonmax_Click);
@@ -165,9 +165,9 @@ namespace DcRat.SingleForms
             this.buttonclose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonclose.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonclose.Image = ((System.Drawing.Image)(resources.GetObject("buttonclose.Image")));
-            this.buttonclose.Location = new System.Drawing.Point(893, 3);
+            this.buttonclose.Location = new System.Drawing.Point(891, 3);
             this.buttonclose.Name = "buttonclose";
-            this.buttonclose.Size = new System.Drawing.Size(37, 39);
+            this.buttonclose.Size = new System.Drawing.Size(39, 39);
             this.buttonclose.TabIndex = 0;
             this.buttonclose.UseVisualStyleBackColor = false;
             this.buttonclose.Click += new System.EventHandler(this.buttonclose_Click);
@@ -411,14 +411,14 @@ namespace DcRat.SingleForms
             this.toolStripSeparator6,
             this.propertyToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(197, 386);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(155, 364);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
             this.openToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // openWithToolStripMenuItem
@@ -429,7 +429,7 @@ namespace DcRat.SingleForms
             this.openWithToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openWithToolStripMenuItem.Image")));
             this.openWithToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.openWithToolStripMenuItem.Name = "openWithToolStripMenuItem";
-            this.openWithToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.openWithToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.openWithToolStripMenuItem.Text = "Open With";
             // 
             // hiddenToolStripMenuItem
@@ -456,7 +456,7 @@ namespace DcRat.SingleForms
             this.zipToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("zipToolStripMenuItem.Image")));
             this.zipToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.zipToolStripMenuItem.Name = "zipToolStripMenuItem";
-            this.zipToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.zipToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.zipToolStripMenuItem.Text = "7-zip";
             // 
             // zipToolStripMenuItem1
@@ -464,7 +464,7 @@ namespace DcRat.SingleForms
             this.zipToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("zipToolStripMenuItem1.Image")));
             this.zipToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.zipToolStripMenuItem1.Name = "zipToolStripMenuItem1";
-            this.zipToolStripMenuItem1.Size = new System.Drawing.Size(196, 38);
+            this.zipToolStripMenuItem1.Size = new System.Drawing.Size(125, 38);
             this.zipToolStripMenuItem1.Text = "Zip";
             // 
             // unzipToolStripMenuItem
@@ -472,15 +472,20 @@ namespace DcRat.SingleForms
             this.unzipToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("unzipToolStripMenuItem.Image")));
             this.unzipToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.unzipToolStripMenuItem.Name = "unzipToolStripMenuItem";
-            this.unzipToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.unzipToolStripMenuItem.Size = new System.Drawing.Size(125, 38);
             this.unzipToolStripMenuItem.Text = "Unzip";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(151, 6);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
             this.copyToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.copyToolStripMenuItem.Text = "Copy";
             // 
             // cutToolStripMenuItem
@@ -488,7 +493,7 @@ namespace DcRat.SingleForms
             this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
             this.cutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.cutToolStripMenuItem.Text = "Cut";
             // 
             // pasteToolStripMenuItem
@@ -496,15 +501,20 @@ namespace DcRat.SingleForms
             this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
             this.pasteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.pasteToolStripMenuItem.Text = "Paste";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(151, 6);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // renameToolStripMenuItem
@@ -512,31 +522,21 @@ namespace DcRat.SingleForms
             this.renameToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("renameToolStripMenuItem.Image")));
             this.renameToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
-            this.renameToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.renameToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.renameToolStripMenuItem.Text = "Rename";
             // 
-            // toolStripSeparator4
+            // toolStripSeparator6
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(193, 6);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(151, 6);
             // 
             // propertyToolStripMenuItem
             // 
             this.propertyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("propertyToolStripMenuItem.Image")));
             this.propertyToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.propertyToolStripMenuItem.Name = "propertyToolStripMenuItem";
-            this.propertyToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.propertyToolStripMenuItem.Size = new System.Drawing.Size(154, 38);
             this.propertyToolStripMenuItem.Text = "Property";
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(193, 6);
             // 
             // singleFormFile
             // 

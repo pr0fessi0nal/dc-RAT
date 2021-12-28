@@ -67,7 +67,7 @@ namespace DcRat.SingleForms
             this.labelDcRat.Location = new System.Drawing.Point(50, 0);
             this.labelDcRat.Margin = new System.Windows.Forms.Padding(50, 0, 3, 0);
             this.labelDcRat.Name = "labelDcRat";
-            this.labelDcRat.Size = new System.Drawing.Size(798, 45);
+            this.labelDcRat.Size = new System.Drawing.Size(792, 45);
             this.labelDcRat.TabIndex = 1;
             this.labelDcRat.Text = "DcRat - Cmd - ";
             this.labelDcRat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelDcRat_MouseDown);
@@ -85,9 +85,9 @@ namespace DcRat.SingleForms
             this.buttonmin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmin.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmin.Image = ((System.Drawing.Image)(resources.GetObject("buttonmin.Image")));
-            this.buttonmin.Location = new System.Drawing.Point(854, 3);
+            this.buttonmin.Location = new System.Drawing.Point(848, 3);
             this.buttonmin.Name = "buttonmin";
-            this.buttonmin.Size = new System.Drawing.Size(37, 39);
+            this.buttonmin.Size = new System.Drawing.Size(39, 39);
             this.buttonmin.TabIndex = 0;
             this.buttonmin.UseVisualStyleBackColor = false;
             this.buttonmin.Click += new System.EventHandler(this.buttonmin_Click);
@@ -105,9 +105,9 @@ namespace DcRat.SingleForms
             this.buttonmax.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmax.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmax.Image = ((System.Drawing.Image)(resources.GetObject("buttonmax.Image")));
-            this.buttonmax.Location = new System.Drawing.Point(897, 3);
+            this.buttonmax.Location = new System.Drawing.Point(893, 3);
             this.buttonmax.Name = "buttonmax";
-            this.buttonmax.Size = new System.Drawing.Size(37, 39);
+            this.buttonmax.Size = new System.Drawing.Size(39, 39);
             this.buttonmax.TabIndex = 0;
             this.buttonmax.UseVisualStyleBackColor = false;
             this.buttonmax.Click += new System.EventHandler(this.buttonmax_Click);
@@ -125,9 +125,9 @@ namespace DcRat.SingleForms
             this.buttonclose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonclose.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonclose.Image = ((System.Drawing.Image)(resources.GetObject("buttonclose.Image")));
-            this.buttonclose.Location = new System.Drawing.Point(940, 3);
+            this.buttonclose.Location = new System.Drawing.Point(938, 3);
             this.buttonclose.Name = "buttonclose";
-            this.buttonclose.Size = new System.Drawing.Size(37, 39);
+            this.buttonclose.Size = new System.Drawing.Size(39, 39);
             this.buttonclose.TabIndex = 0;
             this.buttonclose.UseVisualStyleBackColor = false;
             this.buttonclose.Click += new System.EventHandler(this.buttonclose_Click);

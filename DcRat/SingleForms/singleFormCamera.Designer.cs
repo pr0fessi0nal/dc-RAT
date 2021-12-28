@@ -42,10 +42,10 @@ namespace DcRat.SingleForms
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.paneltop.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -74,7 +74,7 @@ namespace DcRat.SingleForms
             this.labelDcRat.Location = new System.Drawing.Point(50, 0);
             this.labelDcRat.Margin = new System.Windows.Forms.Padding(50, 0, 3, 0);
             this.labelDcRat.Name = "labelDcRat";
-            this.labelDcRat.Size = new System.Drawing.Size(751, 45);
+            this.labelDcRat.Size = new System.Drawing.Size(745, 45);
             this.labelDcRat.TabIndex = 1;
             this.labelDcRat.Text = "DcRat - Camera - ";
             this.labelDcRat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelDcRat_MouseDown);
@@ -92,9 +92,9 @@ namespace DcRat.SingleForms
             this.buttonmin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmin.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmin.Image = ((System.Drawing.Image)(resources.GetObject("buttonmin.Image")));
-            this.buttonmin.Location = new System.Drawing.Point(807, 3);
+            this.buttonmin.Location = new System.Drawing.Point(801, 3);
             this.buttonmin.Name = "buttonmin";
-            this.buttonmin.Size = new System.Drawing.Size(37, 39);
+            this.buttonmin.Size = new System.Drawing.Size(39, 39);
             this.buttonmin.TabIndex = 0;
             this.buttonmin.UseVisualStyleBackColor = false;
             this.buttonmin.Click += new System.EventHandler(this.buttonmin_Click);
@@ -112,9 +112,9 @@ namespace DcRat.SingleForms
             this.buttonmax.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmax.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmax.Image = ((System.Drawing.Image)(resources.GetObject("buttonmax.Image")));
-            this.buttonmax.Location = new System.Drawing.Point(850, 3);
+            this.buttonmax.Location = new System.Drawing.Point(846, 3);
             this.buttonmax.Name = "buttonmax";
-            this.buttonmax.Size = new System.Drawing.Size(37, 39);
+            this.buttonmax.Size = new System.Drawing.Size(39, 39);
             this.buttonmax.TabIndex = 0;
             this.buttonmax.UseVisualStyleBackColor = false;
             this.buttonmax.Click += new System.EventHandler(this.buttonmax_Click);
@@ -132,9 +132,9 @@ namespace DcRat.SingleForms
             this.buttonclose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonclose.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonclose.Image = ((System.Drawing.Image)(resources.GetObject("buttonclose.Image")));
-            this.buttonclose.Location = new System.Drawing.Point(893, 3);
+            this.buttonclose.Location = new System.Drawing.Point(891, 3);
             this.buttonclose.Name = "buttonclose";
-            this.buttonclose.Size = new System.Drawing.Size(37, 39);
+            this.buttonclose.Size = new System.Drawing.Size(39, 39);
             this.buttonclose.TabIndex = 0;
             this.buttonclose.UseVisualStyleBackColor = false;
             this.buttonclose.Click += new System.EventHandler(this.buttonclose_Click);
@@ -202,6 +202,18 @@ namespace DcRat.SingleForms
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 45);
             // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(45, 42);
+            this.toolStripLabel3.Text = "Switch:";
+            // 
+            // toolStripComboBox2
+            // 
+            this.toolStripComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripComboBox2.Name = "toolStripComboBox2";
+            this.toolStripComboBox2.Size = new System.Drawing.Size(200, 45);
+            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
@@ -216,18 +228,6 @@ namespace DcRat.SingleForms
             this.toolStripButton3.Size = new System.Drawing.Size(85, 42);
             this.toolStripButton3.Text = "Capture";
             this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(45, 42);
-            this.toolStripLabel3.Text = "Switch:";
-            // 
-            // toolStripComboBox2
-            // 
-            this.toolStripComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBox2.Name = "toolStripComboBox2";
-            this.toolStripComboBox2.Size = new System.Drawing.Size(200, 45);
             // 
             // singleFormCamera
             // 

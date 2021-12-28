@@ -45,18 +45,18 @@ namespace DcRat.SingleForms
             this.columnHeadercompany = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.killToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createDumpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createMinidumpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createFullDumpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.listView2 = new System.Windows.Forms.ListView();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.listView3 = new System.Windows.Forms.ListView();
             this.columnHeadertype = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderhandlename = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeaderdllname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderpath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paneltop.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -91,7 +91,7 @@ namespace DcRat.SingleForms
             this.labelDcRat.Location = new System.Drawing.Point(50, 0);
             this.labelDcRat.Margin = new System.Windows.Forms.Padding(50, 0, 3, 0);
             this.labelDcRat.Name = "labelDcRat";
-            this.labelDcRat.Size = new System.Drawing.Size(751, 45);
+            this.labelDcRat.Size = new System.Drawing.Size(745, 45);
             this.labelDcRat.TabIndex = 1;
             this.labelDcRat.Text = "DcRat - Process - ";
             this.labelDcRat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelDcRat_MouseDown);
@@ -109,9 +109,9 @@ namespace DcRat.SingleForms
             this.buttonmin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmin.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmin.Image = ((System.Drawing.Image)(resources.GetObject("buttonmin.Image")));
-            this.buttonmin.Location = new System.Drawing.Point(807, 3);
+            this.buttonmin.Location = new System.Drawing.Point(801, 3);
             this.buttonmin.Name = "buttonmin";
-            this.buttonmin.Size = new System.Drawing.Size(37, 39);
+            this.buttonmin.Size = new System.Drawing.Size(39, 39);
             this.buttonmin.TabIndex = 0;
             this.buttonmin.UseVisualStyleBackColor = false;
             this.buttonmin.Click += new System.EventHandler(this.buttonmin_Click);
@@ -129,9 +129,9 @@ namespace DcRat.SingleForms
             this.buttonmax.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmax.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonmax.Image = ((System.Drawing.Image)(resources.GetObject("buttonmax.Image")));
-            this.buttonmax.Location = new System.Drawing.Point(850, 3);
+            this.buttonmax.Location = new System.Drawing.Point(846, 3);
             this.buttonmax.Name = "buttonmax";
-            this.buttonmax.Size = new System.Drawing.Size(37, 39);
+            this.buttonmax.Size = new System.Drawing.Size(39, 39);
             this.buttonmax.TabIndex = 0;
             this.buttonmax.UseVisualStyleBackColor = false;
             this.buttonmax.Click += new System.EventHandler(this.buttonmax_Click);
@@ -149,9 +149,9 @@ namespace DcRat.SingleForms
             this.buttonclose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonclose.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.buttonclose.Image = ((System.Drawing.Image)(resources.GetObject("buttonclose.Image")));
-            this.buttonclose.Location = new System.Drawing.Point(893, 3);
+            this.buttonclose.Location = new System.Drawing.Point(891, 3);
             this.buttonclose.Name = "buttonclose";
-            this.buttonclose.Size = new System.Drawing.Size(37, 39);
+            this.buttonclose.Size = new System.Drawing.Size(39, 39);
             this.buttonclose.TabIndex = 0;
             this.buttonclose.UseVisualStyleBackColor = false;
             this.buttonclose.Click += new System.EventHandler(this.buttonclose_Click);
@@ -223,6 +223,14 @@ namespace DcRat.SingleForms
             this.killToolStripMenuItem.Size = new System.Drawing.Size(160, 38);
             this.killToolStripMenuItem.Text = "Kill";
             // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("refreshToolStripMenuItem.Image")));
+            this.refreshToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(160, 38);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            // 
             // createDumpToolStripMenuItem
             // 
             this.createDumpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -239,7 +247,7 @@ namespace DcRat.SingleForms
             this.createMinidumpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("createMinidumpToolStripMenuItem.Image")));
             this.createMinidumpToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.createMinidumpToolStripMenuItem.Name = "createMinidumpToolStripMenuItem";
-            this.createMinidumpToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.createMinidumpToolStripMenuItem.Size = new System.Drawing.Size(183, 38);
             this.createMinidumpToolStripMenuItem.Text = "Create Minidump";
             // 
             // createFullDumpToolStripMenuItem
@@ -247,7 +255,7 @@ namespace DcRat.SingleForms
             this.createFullDumpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("createFullDumpToolStripMenuItem.Image")));
             this.createFullDumpToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.createFullDumpToolStripMenuItem.Name = "createFullDumpToolStripMenuItem";
-            this.createFullDumpToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.createFullDumpToolStripMenuItem.Size = new System.Drawing.Size(183, 38);
             this.createFullDumpToolStripMenuItem.Text = "Create Full Dump";
             // 
             // splitContainer1
@@ -267,21 +275,6 @@ namespace DcRat.SingleForms
             this.splitContainer1.Size = new System.Drawing.Size(933, 517);
             this.splitContainer1.SplitterDistance = 258;
             this.splitContainer1.TabIndex = 5;
-            // 
-            // listView2
-            // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderdllname,
-            this.columnHeaderpath});
-            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView2.GridLines = true;
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(0, 0);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(472, 255);
-            this.listView2.TabIndex = 0;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
             // 
             // splitContainer2
             // 
@@ -325,6 +318,21 @@ namespace DcRat.SingleForms
             this.columnHeaderhandlename.Text = "Name";
             this.columnHeaderhandlename.Width = 329;
             // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderdllname,
+            this.columnHeaderpath});
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(0, 0);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(472, 255);
+            this.listView2.TabIndex = 0;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
             // columnHeaderdllname
             // 
             this.columnHeaderdllname.Text = "Name";
@@ -334,14 +342,6 @@ namespace DcRat.SingleForms
             // 
             this.columnHeaderpath.Text = "Path";
             this.columnHeaderpath.Width = 375;
-            // 
-            // refreshToolStripMenuItem
-            // 
-            this.refreshToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("refreshToolStripMenuItem.Image")));
-            this.refreshToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(160, 38);
-            this.refreshToolStripMenuItem.Text = "Refresh";
             // 
             // singleFormProcess
             // 
