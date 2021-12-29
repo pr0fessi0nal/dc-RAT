@@ -38,6 +38,9 @@ namespace DcRat.ChildForms
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.toggleButton2 = new DcRat.Controls.ToggleButton();
+            this.toggleButton1 = new DcRat.Controls.ToggleButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -57,9 +60,6 @@ namespace DcRat.ChildForms
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.toggleButton1 = new DcRat.Controls.ToggleButton();
-            this.toggleButton2 = new DcRat.Controls.ToggleButton();
             this.panelSettingsBack.SuspendLayout();
             this.panelSettings.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -181,6 +181,36 @@ namespace DcRat.ChildForms
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Notify";
+            // 
+            // toggleButton2
+            // 
+            this.toggleButton2.BackColor = System.Drawing.Color.Transparent;
+            this.toggleButton2.Checked = false;
+            this.toggleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.toggleButton2.Location = new System.Drawing.Point(185, 102);
+            this.toggleButton2.Name = "toggleButton2";
+            this.toggleButton2.Size = new System.Drawing.Size(50, 50);
+            this.toggleButton2.TabIndex = 19;
+            // 
+            // toggleButton1
+            // 
+            this.toggleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.toggleButton1.Checked = false;
+            this.toggleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.toggleButton1.Location = new System.Drawing.Point(185, 42);
+            this.toggleButton1.Name = "toggleButton1";
+            this.toggleButton1.Size = new System.Drawing.Size(50, 50);
+            this.toggleButton1.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(40, 42);
+            this.label2.Margin = new System.Windows.Forms.Padding(30, 10, 30, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 50);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Enable:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // radioButton6
             // 
@@ -386,36 +416,6 @@ namespace DcRat.ChildForms
             this.label10.TabIndex = 6;
             this.label10.Text = "Color:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(40, 42);
-            this.label2.Margin = new System.Windows.Forms.Padding(30, 10, 30, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 50);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "NotifyIcon:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toggleButton1
-            // 
-            this.toggleButton1.BackColor = System.Drawing.Color.Transparent;
-            this.toggleButton1.Checked = false;
-            this.toggleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.toggleButton1.Location = new System.Drawing.Point(185, 42);
-            this.toggleButton1.Name = "toggleButton1";
-            this.toggleButton1.Size = new System.Drawing.Size(50, 50);
-            this.toggleButton1.TabIndex = 18;
-            // 
-            // toggleButton2
-            // 
-            this.toggleButton2.BackColor = System.Drawing.Color.Transparent;
-            this.toggleButton2.Checked = false;
-            this.toggleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.toggleButton2.Location = new System.Drawing.Point(185, 102);
-            this.toggleButton2.Name = "toggleButton2";
-            this.toggleButton2.Size = new System.Drawing.Size(50, 50);
-            this.toggleButton2.TabIndex = 19;
             // 
             // childFormSettings
             // 
