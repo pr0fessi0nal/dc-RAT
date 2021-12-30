@@ -76,12 +76,6 @@
     <Compile Include="ChildForms\childFormTasks.Designer.cs">
       <DependentUpon>childFormTasks.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\childFormThumbnails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\childFormThumbnails.Designer.cs">
-      <DependentUpon>childFormThumbnails.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\ToggleButton.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,9 +141,6 @@
     <EmbeddedResource Include="ChildForms\childFormTasks.resx">
       <DependentUpon>childFormTasks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\childFormThumbnails.resx">
-      <DependentUpon>childFormThumbnails.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,10 +186,70 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\toggle_on .png" />
+    <None Include="Resources\Toggle_Off.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\toggle_off .png" />
+    <None Include="Resources\Toggle_On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home _dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-config_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-config .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\distanceTabel_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\distanceTabel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

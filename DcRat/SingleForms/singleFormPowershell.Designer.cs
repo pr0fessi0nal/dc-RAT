@@ -62,14 +62,15 @@ namespace DcRat.SingleForms
             // 
             this.labelDcRat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelDcRat.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDcRat.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDcRat.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelDcRat.Location = new System.Drawing.Point(50, 0);
+            this.labelDcRat.Location = new System.Drawing.Point(0, 0);
             this.labelDcRat.Margin = new System.Windows.Forms.Padding(50, 0, 3, 0);
             this.labelDcRat.Name = "labelDcRat";
-            this.labelDcRat.Size = new System.Drawing.Size(745, 45);
+            this.labelDcRat.Size = new System.Drawing.Size(795, 45);
             this.labelDcRat.TabIndex = 1;
             this.labelDcRat.Text = "DcRat - Powershell - ";
+            this.labelDcRat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelDcRat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelDcRat_MouseDown);
             // 
             // buttonmin

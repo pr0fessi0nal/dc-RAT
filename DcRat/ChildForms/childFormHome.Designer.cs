@@ -31,6 +31,19 @@ namespace DcRat.ChildForms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(childFormHome));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "127.0.0.1",
+            "China",
+            "test",
+            "1234567890",
+            "qwqdanchun/Admin",
+            "Windows 10 Pro",
+            "True",
+            "Type1 installer at 2021/12/29/12:44",
+            "Windows Defender",
+            "0ms",
+            "Program"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("123");
             this.toolStripMain = new System.Windows.Forms.ToolStrip();
             this.toolStripButtoncmd = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonpowershell = new System.Windows.Forms.ToolStripButton();
@@ -42,23 +55,39 @@ namespace DcRat.ChildForms
             this.toolStripButtondevice = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButtonicon = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtondetails = new System.Windows.Forms.ToolStripButton();
             this.splitContainerHome = new System.Windows.Forms.SplitContainer();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewHome = new System.Windows.Forms.ListView();
             this.columnHeaderip = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderaddress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeadergroup = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderhwid = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderuser = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeadercamera = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderinstall = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderav = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderping = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderactive = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageListicon = new System.Windows.Forms.ImageList(this.components);
+            this.imageListblank = new System.Windows.Forms.ImageList(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.contextMenuStripMain = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.updateUI = new System.Windows.Forms.Timer(this.components);
+            this.loadShellcodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerHome)).BeginInit();
             this.splitContainerHome.Panel1.SuspendLayout();
             this.splitContainerHome.Panel2.SuspendLayout();
             this.splitContainerHome.SuspendLayout();
+            this.contextMenuStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripMain
             // 
             this.toolStripMain.AutoSize = false;
-            this.toolStripMain.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripMain.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripMain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtoncmd,
@@ -70,7 +99,9 @@ namespace DcRat.ChildForms
             this.toolStripButtonnetwork,
             this.toolStripButtondevice,
             this.toolStripLabel2,
-            this.toolStripLabel1});
+            this.toolStripLabel1,
+            this.toolStripButtonicon,
+            this.toolStripButtondetails});
             this.toolStripMain.Location = new System.Drawing.Point(0, 0);
             this.toolStripMain.Name = "toolStripMain";
             this.toolStripMain.Size = new System.Drawing.Size(981, 45);
@@ -200,6 +231,31 @@ namespace DcRat.ChildForms
             this.toolStripLabel1.Text = "toolStripLabel1";
             this.toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // toolStripButtonicon
+            // 
+            this.toolStripButtonicon.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButtonicon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonicon.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonicon.Image")));
+            this.toolStripButtonicon.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtonicon.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonicon.Name = "toolStripButtonicon";
+            this.toolStripButtonicon.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtonicon.Text = "toolStripButton1";
+            this.toolStripButtonicon.Click += new System.EventHandler(this.toolStripButtonicon_Click);
+            // 
+            // toolStripButtondetails
+            // 
+            this.toolStripButtondetails.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButtondetails.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtondetails.Enabled = false;
+            this.toolStripButtondetails.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtondetails.Image")));
+            this.toolStripButtondetails.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButtondetails.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtondetails.Name = "toolStripButtondetails";
+            this.toolStripButtondetails.Size = new System.Drawing.Size(36, 42);
+            this.toolStripButtondetails.Text = "toolStripButton2";
+            this.toolStripButtondetails.Click += new System.EventHandler(this.toolStripButtondetails_Click);
+            // 
             // splitContainerHome
             // 
             this.splitContainerHome.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -209,7 +265,7 @@ namespace DcRat.ChildForms
             // 
             // splitContainerHome.Panel1
             // 
-            this.splitContainerHome.Panel1.Controls.Add(this.listView1);
+            this.splitContainerHome.Panel1.Controls.Add(this.listViewHome);
             // 
             // splitContainerHome.Panel2
             // 
@@ -218,25 +274,110 @@ namespace DcRat.ChildForms
             this.splitContainerHome.SplitterDistance = 273;
             this.splitContainerHome.TabIndex = 1;
             // 
-            // listView1
+            // listViewHome
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderip});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(981, 273);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewHome.BackColor = System.Drawing.SystemColors.Window;
+            this.listViewHome.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderip,
+            this.columnHeaderaddress,
+            this.columnHeadergroup,
+            this.columnHeaderhwid,
+            this.columnHeaderuser,
+            this.columnHeaderos,
+            this.columnHeadercamera,
+            this.columnHeaderinstall,
+            this.columnHeaderav,
+            this.columnHeaderping,
+            this.columnHeaderactive});
+            this.listViewHome.ContextMenuStrip = this.contextMenuStripMain;
+            this.listViewHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewHome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewHome.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.listViewHome.FullRowSelect = true;
+            this.listViewHome.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.listViewHome.HideSelection = false;
+            listViewItem1.StateImageIndex = 0;
+            this.listViewHome.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2});
+            this.listViewHome.LargeImageList = this.imageListicon;
+            this.listViewHome.Location = new System.Drawing.Point(0, 0);
+            this.listViewHome.MultiSelect = false;
+            this.listViewHome.Name = "listViewHome";
+            this.listViewHome.Size = new System.Drawing.Size(981, 273);
+            this.listViewHome.SmallImageList = this.imageListblank;
+            this.listViewHome.TabIndex = 0;
+            this.listViewHome.UseCompatibleStateImageBehavior = false;
+            this.listViewHome.View = System.Windows.Forms.View.Details;
+            this.listViewHome.SelectedIndexChanged += new System.EventHandler(this.listViewHome_SelectedIndexChanged);
+            this.listViewHome.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listViewHome_MouseDown);
+            this.listViewHome.MouseLeave += new System.EventHandler(this.listViewHome_MouseLeave);
+            this.listViewHome.MouseMove += new System.Windows.Forms.MouseEventHandler(this.listViewHome_MouseMove);
             // 
             // columnHeaderip
             // 
             this.columnHeaderip.Text = "IP";
-            this.columnHeaderip.Width = 140;
+            this.columnHeaderip.Width = 115;
+            // 
+            // columnHeaderaddress
+            // 
+            this.columnHeaderaddress.Text = "Address";
+            this.columnHeaderaddress.Width = 111;
+            // 
+            // columnHeadergroup
+            // 
+            this.columnHeadergroup.Text = "Group";
+            // 
+            // columnHeaderhwid
+            // 
+            this.columnHeaderhwid.Text = "HWID";
+            this.columnHeaderhwid.Width = 165;
+            // 
+            // columnHeaderuser
+            // 
+            this.columnHeaderuser.Text = "User Name/Permission";
+            this.columnHeaderuser.Width = 158;
+            // 
+            // columnHeaderos
+            // 
+            this.columnHeaderos.Text = "OS Version";
+            this.columnHeaderos.Width = 162;
+            // 
+            // columnHeadercamera
+            // 
+            this.columnHeadercamera.Text = "Camera";
+            this.columnHeadercamera.Width = 59;
+            // 
+            // columnHeaderinstall
+            // 
+            this.columnHeaderinstall.Text = "Install Information";
+            this.columnHeaderinstall.Width = 193;
+            // 
+            // columnHeaderav
+            // 
+            this.columnHeaderav.Text = "Anti-Virus Products";
+            this.columnHeaderav.Width = 213;
+            // 
+            // columnHeaderping
+            // 
+            this.columnHeaderping.Text = "Ping";
+            // 
+            // columnHeaderactive
+            // 
+            this.columnHeaderactive.Text = "Active Window";
+            this.columnHeaderactive.Width = 293;
+            // 
+            // imageListicon
+            // 
+            this.imageListicon.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListicon.ImageStream")));
+            this.imageListicon.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListicon.Images.SetKeyName(0, "sandgalss (1).png");
+            // 
+            // imageListblank
+            // 
+            this.imageListblank.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageListblank.ImageSize = new System.Drawing.Size(1, 32);
+            this.imageListblank.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // richTextBox1
             // 
@@ -252,14 +393,25 @@ namespace DcRat.ChildForms
             // 
             // contextMenuStripMain
             // 
+            this.contextMenuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadShellcodeToolStripMenuItem});
             this.contextMenuStripMain.Name = "contextMenuStripMain";
-            this.contextMenuStripMain.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStripMain.Size = new System.Drawing.Size(182, 42);
             // 
             // updateUI
             // 
             this.updateUI.Enabled = true;
             this.updateUI.Interval = 500;
             this.updateUI.Tick += new System.EventHandler(this.updateUI_Tick);
+            // 
+            // loadShellcodeToolStripMenuItem
+            // 
+            this.loadShellcodeToolStripMenuItem.Image = global::DcRat.Properties.Resources.setting_dark;
+            this.loadShellcodeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.loadShellcodeToolStripMenuItem.Name = "loadShellcodeToolStripMenuItem";
+            this.loadShellcodeToolStripMenuItem.Size = new System.Drawing.Size(181, 38);
+            this.loadShellcodeToolStripMenuItem.Text = "Load Shellcode";
+            this.loadShellcodeToolStripMenuItem.Click += new System.EventHandler(this.loadShellcodeToolStripMenuItem_Click);
             // 
             // childFormHome
             // 
@@ -277,6 +429,7 @@ namespace DcRat.ChildForms
             this.splitContainerHome.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerHome)).EndInit();
             this.splitContainerHome.ResumeLayout(false);
+            this.contextMenuStripMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -291,7 +444,7 @@ namespace DcRat.ChildForms
         private System.Windows.Forms.ToolStripButton toolStripButtonfile;
         private System.Windows.Forms.ToolStripButton toolStripButtonprocess;
         private System.Windows.Forms.SplitContainer splitContainerHome;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewHome;
         private System.Windows.Forms.ColumnHeader columnHeaderip;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButtonnetwork;
@@ -300,5 +453,20 @@ namespace DcRat.ChildForms
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.Timer updateUI;
+        private System.Windows.Forms.ImageList imageListblank;
+        private System.Windows.Forms.ColumnHeader columnHeaderaddress;
+        private System.Windows.Forms.ColumnHeader columnHeadergroup;
+        private System.Windows.Forms.ColumnHeader columnHeaderhwid;
+        private System.Windows.Forms.ColumnHeader columnHeaderuser;
+        private System.Windows.Forms.ColumnHeader columnHeaderos;
+        private System.Windows.Forms.ColumnHeader columnHeadercamera;
+        private System.Windows.Forms.ColumnHeader columnHeaderinstall;
+        private System.Windows.Forms.ColumnHeader columnHeaderav;
+        private System.Windows.Forms.ColumnHeader columnHeaderping;
+        private System.Windows.Forms.ColumnHeader columnHeaderactive;
+        private System.Windows.Forms.ImageList imageListicon;
+        private System.Windows.Forms.ToolStripButton toolStripButtonicon;
+        private System.Windows.Forms.ToolStripButton toolStripButtondetails;
+        private System.Windows.Forms.ToolStripMenuItem loadShellcodeToolStripMenuItem;
     }
 }

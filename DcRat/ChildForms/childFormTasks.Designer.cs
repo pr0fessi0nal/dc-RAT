@@ -30,8 +30,13 @@ namespace DcRat.ChildForms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Install",
+            "On",
+            "OnConnection",
+            "2"}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(childFormTasks));
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewtasks = new System.Windows.Forms.ListView();
             this.columnHeadertaskname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderstatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeadertrigger = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -44,49 +49,55 @@ namespace DcRat.ChildForms
             this.contextMenuStripTasks.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listView1
+            // listViewtasks
             // 
-            this.listView1.BackColor = System.Drawing.SystemColors.Window;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewtasks.BackColor = System.Drawing.SystemColors.Window;
+            this.listViewtasks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeadertaskname,
             this.columnHeaderstatus,
             this.columnHeadertrigger,
             this.columnHeaderexecutiontimes});
-            this.listView1.ContextMenuStrip = this.contextMenuStripTasks;
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(800, 475);
-            this.listView1.SmallImageList = this.imageListblank;
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewtasks.ContextMenuStrip = this.contextMenuStripTasks;
+            this.listViewtasks.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewtasks.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewtasks.FullRowSelect = true;
+            this.listViewtasks.GridLines = true;
+            this.listViewtasks.HideSelection = false;
+            this.listViewtasks.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.listViewtasks.Location = new System.Drawing.Point(0, 0);
+            this.listViewtasks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listViewtasks.MultiSelect = false;
+            this.listViewtasks.Name = "listViewtasks";
+            this.listViewtasks.Size = new System.Drawing.Size(1180, 481);
+            this.listViewtasks.SmallImageList = this.imageListblank;
+            this.listViewtasks.TabIndex = 0;
+            this.listViewtasks.UseCompatibleStateImageBehavior = false;
+            this.listViewtasks.View = System.Windows.Forms.View.Details;
+            this.listViewtasks.SelectedIndexChanged += new System.EventHandler(this.listViewtasks_SelectedIndexChanged);
+            this.listViewtasks.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listViewtasks_MouseDown);
+            this.listViewtasks.MouseLeave += new System.EventHandler(this.listViewtasks_MouseLeave);
+            this.listViewtasks.MouseMove += new System.Windows.Forms.MouseEventHandler(this.listViewtasks_MouseMove);
             // 
             // columnHeadertaskname
             // 
             this.columnHeadertaskname.Text = "TaskName";
-            this.columnHeadertaskname.Width = 107;
+            this.columnHeadertaskname.Width = 353;
             // 
             // columnHeaderstatus
             // 
             this.columnHeaderstatus.Text = "Status";
-            this.columnHeaderstatus.Width = 86;
+            this.columnHeaderstatus.Width = 122;
             // 
             // columnHeadertrigger
             // 
             this.columnHeadertrigger.Text = "Trigger";
-            this.columnHeadertrigger.Width = 343;
+            this.columnHeadertrigger.Width = 359;
             // 
             // columnHeaderexecutiontimes
             // 
             this.columnHeaderexecutiontimes.Text = "Execution Times";
-            this.columnHeaderexecutiontimes.Width = 242;
+            this.columnHeaderexecutiontimes.Width = 176;
             // 
             // contextMenuStripTasks
             // 
@@ -96,14 +107,14 @@ namespace DcRat.ChildForms
             this.editToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.contextMenuStripTasks.Name = "contextMenuStripTasks";
-            this.contextMenuStripTasks.Size = new System.Drawing.Size(197, 140);
+            this.contextMenuStripTasks.Size = new System.Drawing.Size(124, 118);
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
             this.newToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(123, 38);
             this.newToolStripMenuItem.Text = "New";
             // 
             // editToolStripMenuItem
@@ -111,7 +122,7 @@ namespace DcRat.ChildForms
             this.editToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editToolStripMenuItem.Image")));
             this.editToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(123, 38);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // deleteToolStripMenuItem
@@ -119,21 +130,21 @@ namespace DcRat.ChildForms
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(123, 38);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // imageListblank
             // 
             this.imageListblank.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageListblank.ImageSize = new System.Drawing.Size(32, 32);
+            this.imageListblank.ImageSize = new System.Drawing.Size(1, 32);
             this.imageListblank.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // childFormTasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 475);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(1180, 481);
+            this.Controls.Add(this.listViewtasks);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -146,7 +157,7 @@ namespace DcRat.ChildForms
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewtasks;
         private System.Windows.Forms.ColumnHeader columnHeadertaskname;
         private System.Windows.Forms.ColumnHeader columnHeaderstatus;
         private System.Windows.Forms.ColumnHeader columnHeadertrigger;

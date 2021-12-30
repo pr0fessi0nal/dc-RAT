@@ -1,7 +1,18 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DcRat.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="colorside" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Control</Value>
+    </Setting>
+    <Setting Name="colorsidedark" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">45, 45, 48</Value>
+    </Setting>
+    <Setting Name="colortext" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">81, 81, 81</Value>
+    </Setting>
+    <Setting Name="colortextdark" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">240, 240, 240</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

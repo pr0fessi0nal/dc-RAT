@@ -13,13 +13,11 @@ namespace DcRat
         childFormBuilder childForm_Builder;
         childFormSettings childForm_Settings;
         childFormTasks childForm_Tasks;
-        childFormThumbnails childForm_Thumbnails;
         childFormHome childForm_Home = new childFormHome();
         bool childFormAbout_on = false;
         bool childFormBuilder_on = false;
         bool childFormSettings_on = false;
         bool childFormTasks_on = false;
-        bool childFormThumbnails_on = false;
 
 
         public FormMain()
@@ -225,17 +223,6 @@ namespace DcRat
             openChildForm(childForm_Home);
         }
 
-        private void buttonthumbnails_Click(object sender, EventArgs e)
-        {
-            Move_panel_side(buttonthumbnails);
-            if (!childFormThumbnails_on)
-            {
-                childForm_Thumbnails = new childFormThumbnails();
-                childFormThumbnails_on = true;
-            }
-            openChildForm(childForm_Thumbnails);
-        }
-
         private void buttontasks_Click(object sender, EventArgs e)
         {
             Move_panel_side(buttontasks);
@@ -285,6 +272,17 @@ namespace DcRat
             this.WindowState = FormWindowState.Minimized;
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (panelleft.Width == 0) 
+            {
+                panelleft.Width = 165;
+            }
+            else 
+            { 
+                panelleft.Width = 0; 
+            }
+            
+        }
     }
 }

@@ -220,7 +220,6 @@ namespace DcRat.ChildForms
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(83, 25);
             this.radioButton6.TabIndex = 15;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Chinese";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
@@ -231,13 +230,13 @@ namespace DcRat.ChildForms
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(78, 25);
             this.radioButton5.TabIndex = 14;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "English";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
+            this.radioButton4.Checked = true;
             this.radioButton4.Location = new System.Drawing.Point(185, 175);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 3, 50, 3);
             this.radioButton4.Name = "radioButton4";
@@ -363,7 +362,7 @@ namespace DcRat.ChildForms
             // 
             // trackBar1
             // 
-            this.trackBar1.LargeChange = 2;
+            this.trackBar1.LargeChange = 1;
             this.trackBar1.Location = new System.Drawing.Point(134, 74);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Minimum = 90;
@@ -376,6 +375,7 @@ namespace DcRat.ChildForms
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
+            this.radioButton3.Checked = true;
             this.radioButton3.Location = new System.Drawing.Point(134, 37);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Padding = new System.Windows.Forms.Padding(30, 0, 30, 0);
@@ -393,7 +393,6 @@ namespace DcRat.ChildForms
             this.radioButton2.Padding = new System.Windows.Forms.Padding(30, 0, 30, 0);
             this.radioButton2.Size = new System.Drawing.Size(121, 25);
             this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Dark";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 

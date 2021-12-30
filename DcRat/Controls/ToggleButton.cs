@@ -43,8 +43,8 @@ namespace DcRat.Controls
             Bitmap bitMapOn = null;
             Bitmap bitMapOff = null;
 
-            bitMapOn = Properties.Resources.toggle_on;
-            bitMapOff = Properties.Resources.toggle_off;
+            bitMapOn = Properties.Resources.Toggle_On;
+            bitMapOff = Properties.Resources.Toggle_Off;
 
             Graphics g = e.Graphics;
             Rectangle rec = new Rectangle(0, 0, this.Size.Width, this.Size.Height);
